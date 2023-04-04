@@ -1,6 +1,6 @@
-package kr.ac.poly.controller;
+package com.example.ex3.controller;
 
-import kr.ac.poly.dto.SampleDto;
+import com.example.ex3.dto.SampleDto;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
