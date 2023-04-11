@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>exLayout3 연습(Main)</h1>
+  <div th:fragment="target(first, second)">
+    <style>
+      .c1{
+        background-color: bisque;
+      }
+      .c2{
+        background-color: aqua;
+      }
+    </style>
+    <div th:class="c1">
+      <th:block th:replace="${first}"></th:block>
+    </div>
+    <div th:class="c2">
+      <th:block th:replace="${second}"></th:block>
+    </div>
+  </div>
+</body>
+</html>
